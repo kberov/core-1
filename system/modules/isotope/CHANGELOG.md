@@ -1,13 +1,20 @@
 Isotope eCommerce Changelog
 ===========================
 
-Version 1.3.1 stable (????-??-??)
----------------------------------
+Version 1.4.beta1 (2012-??-??)
+------------------------------
 
-### Fixed
-- The gallery lightbox did not work in Contao 2.11 (#3079)
-- Show templates from theme and store config folders in mail template configuration (#3080)
-- IsotopeProduct doesn't support AJAX calls from Content Elements (#3095)
+### New
+- New filter module "Cumulative filter"
+- Merged the zoom gallery into Isotope eCommerce core
+- Added support for frontend-only attributes
+- Added new attribute type "upload"
+- Can now manage order status in the backend and notify on status changes
+
+### Improved
+- Checkout steps are now a numbered list (#3040)
+- Product list can be sorted by dateAdded, this allows to list the newest products
+
 
 Version 1.3.0 stable (2012-04-04)
 ---------------------------------

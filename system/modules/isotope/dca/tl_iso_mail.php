@@ -190,8 +190,8 @@ $GLOBALS['TL_DCA']['tl_iso_mail'] = array
 			'exclude'                 => true,
 			'inputType'               => 'select',
 			'default'                 => 'mail_default',
-			'options'                 => IsotopeBackend::getTemplates('mail_'),
-			'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50'),
+			'options'                 => $this->getTemplateGroup('mail_'),
+			'eval'                    => array('mandatory'=>true, 'tl_class'=>'w50', 'chosen'=>true)
 		),
 		'priority' => array
 		(
@@ -215,8 +215,8 @@ $GLOBALS['TL_DCA']['tl_iso_mail'] = array
 			'label'					  => &$GLOBALS['TL_LANG']['tl_iso_mail']['documentTemplate'],
 			'exclude'                 => true,
 			'inputType'				  => 'select',
-			'options'				  => IsotopeBackend::getTemplates('iso_invoice'),
-			'eval'					  => array('includeBlankOption'=>true, 'tl_class'=>'w50'),
+			'options'				  => $this->getTemplateGroup('iso_invoice'),
+			'eval'					  => array('includeBlankOption'=>true, 'tl_class'=>'w50', 'chosen'=>true)
 		),
 		'documentTitle'		=> array
 		(
